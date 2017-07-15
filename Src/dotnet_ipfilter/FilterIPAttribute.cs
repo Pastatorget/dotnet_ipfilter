@@ -10,6 +10,7 @@ using System.Web.Http.Controllers;
 
 namespace dotnet_ipfilter
 {
+    [AttributeUsage(AttributeTargets.Class | AttributeTargets.Method)]
     public class FilterIPAttribute : AuthorizeAttribute
     {
         #region Allowed
